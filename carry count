@@ -1,0 +1,33 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class HelloWorld {
+    public static int Karry(int m,int n)
+    {
+        int c =0;
+        int car =0;
+        
+        while(n >0 && m>0)
+        {
+            int a = m%10;
+            int b = n%10;
+            int sum = car +a +b;
+            if(sum >9)
+            {
+                car = sum%9;
+                c++;
+            }
+            else
+            {
+                car = 0;
+            }
+            m = m/10;
+            n= n/10;
+        }
+        return c;
+    }
+    public static void main(String[] args) {
+        int a = Karry(451,349);
+        System.out.println(a);
+    }
+}
