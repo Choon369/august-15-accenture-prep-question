@@ -1,0 +1,28 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class HelloWorld {
+    public static int defOfSum(int m,int n)
+    {
+        int sum1=0;
+        int sum2 = 0;
+        for(int i =0;i<= n ;i++)
+        {
+            if(i%m ==0)
+            {
+                sum1 += i;
+                
+            }
+            else
+            {
+                sum2 +=i;
+            }
+        }
+        sum2 = sum2 - sum1;
+        return sum2;
+    }
+    public static void main(String[] args) {
+        int a = defOfSum(6,30);
+        System.out.println(a);
+    }
+}
